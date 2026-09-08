@@ -6,10 +6,11 @@ AI assistants are welcome in this course, but use them to get unstuck, not to do
 
 ## Setup
 
-1. Open the React Playground (Professor's CodeSandbox Template) and fork it:
+1. You need a free CodeSandbox account. Sign in with your GitHub account, or create one at https://codesandbox.io.
+2. Open the React Playground (Professor's CodeSandbox Template) and fork it:
    (https://codesandbox.io/p/sandbox/react-basic-3rqll4)
-2. Rename the sandbox to `WEB530 Lab 1 - Your Name`.
-3. Open `package.json` and verify it matches the file below. It must use React 18 and include `prop-types`. If it does not, replace the contents with the file below and restart the sandbox.
+3. Rename the sandbox to `WEB530 Lab 1 - Your Name`.
+4. Open `package.json` and verify it matches the file below. It must use React 18 and include `prop-types`. If it does not, replace the contents with the file below and restart the sandbox.
 
 ```json
 {
