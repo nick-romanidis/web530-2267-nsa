@@ -100,21 +100,21 @@ Requirements:
 
 Hint: `onChangeText` gives you the new string directly, so `onChangeText={setName}` works. There is no event object to dig through.
 
-## Question 3 - Switch and Conditional Rendering (1 point)
+## Question 3 - Toggling State and Conditional Rendering (1 point)
 
 Create a component called `NotificationSettings` with three parts:
 
-- A `Switch` that is off when the app starts.
-- A `Text` that reads `Notifications are on` or `Notifications are off` depending on the switch.
-- A `Button` titled `Send test notification` that is **disabled** while the switch is off. When pressed, it shows an alert saying `Test notification sent`.
+- A `Text` that reads `Notifications are on` or `Notifications are off`. Notifications are off when the app starts.
+- A `Button` that toggles notifications. Its title reads `Turn notifications on` when they are off, and `Turn notifications off` when they are on.
+- A `Button` titled `Send test notification` that is **disabled** while notifications are off. When pressed, it shows an alert saying `Test notification sent`.
 
 Requirements:
 
-- One `useState` holds the on/off value.
-- `Switch` uses `value` and `onValueChange`.
-- The `Button` uses the `disabled` prop. Do not hide the button; it must stay visible and greyed out.
+- One `useState` holds the on/off value as a boolean.
+- The toggle button flips the boolean. Use the function form: `setEnabled((prev) => !prev)`.
+- The send button uses the `disabled` prop. Do not hide the button; it must stay visible and greyed out.
 
-Hint: A ternary inside JSX chooses between two strings: `{enabled ? "on" : "off"}`.
+Hint: A ternary inside JSX chooses between two strings: `{enabled ? "on" : "off"}`. The same trick works inside the `title` prop.
 
 ## Question 4 - Lifting State Up (1 point)
 
