@@ -16,7 +16,7 @@ This lab has two questions. Plan for about 60 minutes.
 - Submit to the `Lab 3` assessment in Blackboard:
   - One screenshot for Question 1.
   - One Snack link for Question 2. After you save, the link looks like `https://snack.expo.dev/@yourname/web530-lab-3-...`.
-- The lab is due Monday at 11:59 PM. You have the weekend to complete it.
+- The lab is due **Tuesday, September 29 at 1:30 PM**.
 - Only students who participated in the week 3 Tuesday/Wednesday class, and handed in a lab slip can receive marks for this lab. If you did not, you are still encouraged to complete it as practice.
 - Before submitting, save the Snack one last time and open your link in a private browser window to confirm it loads without signing in.
 
