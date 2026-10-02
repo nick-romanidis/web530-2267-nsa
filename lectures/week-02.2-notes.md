@@ -81,7 +81,7 @@ function MyButton({ enabled = true }) {
     <Button
       disabled={!enabled}
       onPress={() => {
-        setCount(count + 1);
+        setCount((prev) => prev + 1);
       }}
       title={`Button clicked ${count} times`}
     />
@@ -97,7 +97,7 @@ export default function MyApp() {
 }
 ```
 
-- Show what goes wrong when the new value depends on the old one and we do not pass a function.
+- The new count depends on the old one, so we pass a function to `setCount`. Show what goes wrong if we use `count` directly instead.
 - Change the button to add 2 by calling `setCount` twice.
 
 ```jsx
@@ -108,6 +108,7 @@ function MyButton({ enabled = true }) {
     <Button
       disabled={!enabled}
       onPress={() => {
+        // Bug: both calls read the same count.
         setCount(count + 1);
         setCount(count + 1);
       }}
@@ -120,7 +121,7 @@ function MyButton({ enabled = true }) {
 - Press it. The count goes up by 1, not 2.
 - `count` is a plain variable that was filled in when the component rendered. Both calls read the same value, so both say "make it 1". React batches them and applies the same value twice.
 - Now change both calls to `setCount((prev) => prev + 1)`. React runs each function on the latest value, so the count goes up by 2.
-- To avoid stale state, use this syntax. When the new value depends on the old one, pass a function.
+- To avoid stale state, always use this syntax when the new value depends on the old one: `setCount((prev) => prev + 1)`, `setOn((prev) => !prev)`, `setItems((prev) => [...prev, item])`.
 
 ```jsx
 function MyButton({ enabled = true }) {
@@ -216,7 +217,7 @@ export default function MyApp() {
       <MyButton
         count={count}
         handlePress={() => {
-          setCount(count + 1);
+          setCount((prev) => prev + 1);
         }}
       />
     </View>
