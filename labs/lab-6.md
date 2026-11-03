@@ -29,6 +29,8 @@ Starter for `package.json`:
 ```json
 {
   "dependencies": {
+    "react-native-paper": "4.9.2",
+    "@expo/vector-icons": "^15.0.3",
     "expo-location": "~19.0.8",
     "react-native-maps": "1.20.1"
   }
