@@ -611,7 +611,7 @@ export default function ProductsLayout() {
 />
 ```
 
-- Nothing lives at `/` any more, so opening the app would show Unmatched Route. Add `src/app/index.tsx` that sends the user to the shop.
+- Nothing lives at `/` any more, so opening the app would show Unmatched Route. Create a **new file** named `index.tsx` directly in `src/app`, next to `_layout.tsx`, that sends the user to the shop. Do not paste this into `_layout.tsx`: that file keeps the root `Stack` from Step 3.
 
 ```tsx
 import { Redirect } from "expo-router";
