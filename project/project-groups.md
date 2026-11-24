@@ -6,4 +6,4 @@
 | Group 2 - Wardrobe | Maximilian Ali, Minsik Kim, Natasha Nicole Ejercito, Minh Huy Nguyen, Cristian Alejandro Naranjo Bello       |
 | Group 3 - Fitness App | S M Abdullah Ahsan, Ulash Yshyk, Daniel Giagio, Mark Kudriavtsev                                             |
 | Group 4 - Flash Cards | Hiru Neshan Wijemanne, Preeya Surisai, Manraj Singh, Vivian Odd                                              |
-| Group 5 | Hargundeep Kaur, Fabricio Alejandro Ortiz Fiallos, Reginald Bernardo, Khushi Arora                           |
+| Group 5 - Social/Event Planning | Hargundeep Kaur, Fabricio Alejandro Ortiz Fiallos, Reginald Bernardo, Khushi Arora                           |
